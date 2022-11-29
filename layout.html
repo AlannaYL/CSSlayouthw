@@ -48,7 +48,7 @@
       /* height: 30px; */
       /* margin: auto; */
       padding: 25px 10px 10px 10px;
-      background: #F5EAD9;
+      background: #fff;
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     }
 
@@ -60,6 +60,7 @@
       text-align: center;
       padding: 10px 10px;
       line-height: 2;
+      margin-bottom: 2rem;
     }
 
     .mini-new-box {
@@ -69,19 +70,19 @@
       margin: auto;
     }
 
-    .new-box .button {
-      width: 150px;
+    .shop-button {
+      width: 30%;
       margin: auto;
       margin-top: 10px;
       padding: 5px 10px;
       border-radius: 30px;
-      background: #F5EAD9;
+      background: #fff;
       overflow: hidden;
       position: relative;
       color: #000;
     }
 
-    .new-box .button::before {
+    .shop-button::before {
       content: "";
       width: 0%;
       height: 100%;
@@ -90,13 +91,13 @@
       top: 0;
       left: 0;
       background: #A9B75A;
-      transition: .35s;
+      transition: .3s;
       transform: scaleX(0);
       transform-origin: left;
       /* z-index: -1; */
     }
 
-    .new-box .button:hover::before {
+    .shop-button:hover::before {
       width: 100%;
       height: 100%;
       transform: scaleX(1);
@@ -104,8 +105,114 @@
     }
 
     .new-box:hover span {
+      transition: .8s;
       color: #fff;
       text-align: center;
+      position: relative;
+    }
+
+    .product-new {
+      width: 100%;
+      height: 350px;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      line-height: 1.5;
+      margin-bottom: 2rem;
+
+    }
+
+    .product-new-icon {
+      width: 35%;
+      height: 40%;
+      background: #A9B75A;
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+    }
+
+    .product-new p {
+      margin-bottom: 1rem;
+    }
+
+    .product-new-circle {
+      width: 13%;
+      height: 15%;
+      background: #A9B75A;
+      border-radius: 50%;
+    }
+
+    .price {
+      width: 100%;
+      height: 500px;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .price-pic {
+      width: 80%;
+      height: 40%;
+      background: #A9B75A;
+      margin-top: 2rem;
+      transition: .3s;
+    }
+
+    .price-pic:hover {
+      transform: scale(1.1);
+    }
+
+    .price-pic2 {
+      width: 80%;
+      height: 20%;
+      background: #FEE0A1;
+    }
+
+    .read-button {
+      width: 30%;
+      margin: auto;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 30px;
+      background: #5F4D34;
+      overflow: hidden;
+      position: relative;
+      color: #000;
+    }
+
+    .read-button::before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      /* border-radius: 30px; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #A9B75A;
+      transition: .3s;
+      transform: scaleX(0);
+      transform-origin: left;
+      /* z-index: -1; */
+    }
+
+    .read-button:hover::before {
+      width: 100%;
+      height: 100%;
+      transform: scaleX(1);
+      /* z-index: -1; */
+    }
+
+    .read-button span {
+      color: #fff;
       position: relative;
     }
   </style>
@@ -122,8 +229,30 @@
       <h1> 挖系圖片區</h1>
       <div class="mini-new-box">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
       <h3>94 打 30% 啦</h3>
-      <div class="button">
+      <div class="shop-button">
         <span> Shop Now </span>
+      </div>
+    </div>
+
+    <div class="product-new">
+      <div class="product-new-icon"></div>
+      <h5>Lorem, ipsum.</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, omnis.</p>
+      <div class="product-new-circle"></div>
+    </div>
+
+    <div class="price">
+      <div class="price-pic">
+        我是會放大的圖片喔
+      </div>
+      <div class="price-pic2">
+        我是可點擊的圖片喔
+      </div>
+      <h2>94 打 50% 啦</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ea ipsam nostrum dolorem itaque, commodi libero
+      </p>
+      <div class="read-button">
+        <span> Read More </span>
       </div>
     </div>
   </div>
