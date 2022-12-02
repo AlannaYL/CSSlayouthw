@@ -228,6 +228,7 @@
     }
 
     .nav-button {
+      text-align: center;
       border: none;
       width: 300px;
       height: 35px;
@@ -237,6 +238,28 @@
 
     .nav-button:hover {
       background: #A9B75A;
+    }
+
+    .price-nav-content input {
+      display: none;
+    }
+
+    .price-nav-content-class-1,
+    .price-nav-content-class-2,
+    .price-nav-content-class-3 {
+      display: none;
+    }
+
+    #nav-btn1:checked~.price-nav-content-class-1 {
+      display: block;
+    }
+
+    #nav-btn2:checked~.price-nav-content-class-2 {
+      display: block;
+    }
+
+    #nav-btn3:checked~.price-nav-content-class-3 {
+      display: block;
     }
   </style>
 </head>
@@ -283,9 +306,27 @@
       <div class="price-nav-logo"></div>
       <h2>Lorem, ipsum.</h2>
       <div class="price-nav-button flex-column-center">
-        <button class="nav-button" aria-checked="true" target="#section01"><span>lorem</span></button>
-        <button class="nav-button" target="#section02"><span>lorem</span></button>
-        <button class="nav-button" target="#section03"><span>lorem</span></button>
+        <label for="nav-btn1" class="nav-button">Lorem, ipsum.</label>
+        <label for="nav-btn2" class="nav-button">Lorem, ipsum.</label>
+        <label for="nav-btn3" class="nav-button">Lorem, ipsum.</label>
+      </div>
+      <div class="price-nav-content">
+        <input type="radio" name="nav-choice" id="nav-btn1">
+        <input type="radio" name="nav-choice" id="nav-btn2">
+        <input type="radio" name="nav-choice" id="nav-btn3">
+        <div class="price-nav-content-class-1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deleniti eveniet debitis eaque molestias
+          voluptatem, voluptas adipisci non. Sed praesentium ipsa dolorum aperiam magnam dolorem minima ad rem.
+          Voluptates, deleniti.
+        </div>
+        <div class="price-nav-content-class-2">
+          良好無門這位豪華記者，很好無限成本一塊人士春天來說點點所在鄉民們有了每日，近年來從事她的每天意思對此寶寶藥物沒想到促進鮮花，驅動界面家庭章節醫院打開私人語文商業為此打算哪些，限制我愛小學民主涉及信心突破時刻傳奇開展聯合套件，第一德國，人氣要在此外夫妻，既。
+        </div>
+        <div class="price-nav-content-class-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deleniti eveniet debitis eaque
+          據說促進因素英國興奮動態住房如下，我現。
+          Voluptates, deleniti.
+        </div>
       </div>
     </div>
   </div>
