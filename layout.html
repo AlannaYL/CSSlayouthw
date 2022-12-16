@@ -215,16 +215,17 @@
 
     .price-nav {
       width: 100%;
-      height: 250px;
+      height: 500px;
       /* background: #5F4D34; */
     }
 
     .price-nav-logo {
-      width: 15%;
-      height: 30%;
+      width: 100px;
+      height: 100px;
       background: #A9B75A;
-      border-radius: 50%;
+      border-radius: 60%;
       line-height: 1.5;
+      margin-bottom: 10px;
     }
 
     .nav-button {
@@ -248,6 +249,9 @@
     .price-nav-content-class-2,
     .price-nav-content-class-3 {
       display: none;
+      padding: .5rem;
+      width: 100%;
+      height: 100px;
     }
 
     #nav-btn1:checked~.price-nav-content-class-1 {
@@ -260,6 +264,28 @@
 
     #nav-btn3:checked~.price-nav-content-class-3 {
       display: block;
+    }
+
+    .person{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 300px;
+      line-height: 1.5;
+    }
+
+    .person-pic{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #000;
+      margin-bottom: .5rem;
+    }
+
+    .person-pic h1{
+      margin-bottom: .5rem;
     }
   </style>
 </head>
@@ -301,7 +327,7 @@
         <span> Read More </span>
       </div>
     </div>
-
+    <!-- 產品選單 -->
     <div class="price-nav flex-column-center">
       <div class="price-nav-logo"></div>
       <h2>Lorem, ipsum.</h2>
@@ -310,8 +336,9 @@
         <label for="nav-btn2" class="nav-button">Lorem, ipsum.</label>
         <label for="nav-btn3" class="nav-button">Lorem, ipsum.</label>
       </div>
+      <!-- 選單內容 -->
       <div class="price-nav-content">
-        <input type="radio" name="nav-choice" id="nav-btn1">
+        <input type="radio" name="nav-choice" id="nav-btn1" checked>
         <input type="radio" name="nav-choice" id="nav-btn2">
         <input type="radio" name="nav-choice" id="nav-btn3">
         <div class="price-nav-content-class-1">
@@ -324,11 +351,34 @@
         </div>
         <div class="price-nav-content-class-3">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deleniti eveniet debitis eaque
-          據說促進因素英國興奮動態住房如下，我現。
-          Voluptates, deleniti.
+          據說促進因素英國興奮動態住房如下，我現。Voluptates, deleniti.
         </div>
       </div>
     </div>
+    <!-- 人物介紹 -->
+    <div class="person">
+      <!-- 頭貼 -->
+      <div class="person-pic"></div>
+      <!-- 名字標題 -->
+      <div class="person-name">
+        <h1>Lorem, ipsum.</h1>
+        <!-- 介紹假文 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit sed optio molestiae nihil reiciendis enim placeat deleniti eius amet rem, quisquam impedit doloremque recusandae numquam iste illo nostrum totam?</p>
+      </div>
+    </div>
+      <!-- 產品圖 -->
+      <div class="price-row">
+        <div class="price-col">
+        <p>Lorem, ipsum.</p>
+        <p>Lorem, ipsum.</p>
+        <div class="shop-button">Shop Now</div>
+        </div>
+        <div class="price-col">
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <div class="shop-button">Shop Now</div>
+          </div>
+      </div>
   </div>
 </body>
 
