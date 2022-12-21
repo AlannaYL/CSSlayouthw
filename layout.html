@@ -6,288 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    /*  https://demo.templatemonster.com/demo/218547.html  */
-    /* color #4D631E  #A9B75A  #5F4D34  #FEE0A1  #F5EAD9  #F4F3F0*/
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="./style.css">
+  <style></style>
 
-    body {
-      background: #F5EAD9;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .flex-column-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .top {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      width: 230px;
-      height: 65px;
-      background: #A9B75A;
-    }
-
-    .navbox {
-      width: 90%;
-      height: 60px;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      background: #A9B75A;
-    }
-
-    .container {
-      width: 90%;
-      /* height: 30px; */
-      /* margin: auto; */
-      padding: 25px 10px 10px 10px;
-      background: #fff;
-      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-    }
-
-    .new-box {
-      width: 100%;
-      height: 200px;
-      background: #5F4D34;
-      color: #fff;
-      text-align: center;
-      padding: 10px 10px;
-      line-height: 2;
-      margin-bottom: 2rem;
-    }
-
-    .mini-new-box {
-      width: 90%;
-      height: 30px;
-      background: #A9B75A;
-      margin: auto;
-    }
-
-    .shop-button {
-      width: 30%;
-      margin: auto;
-      margin-top: 10px;
-      padding: 5px 10px;
-      border-radius: 30px;
-      background: #fff;
-      overflow: hidden;
-      position: relative;
-      color: #000;
-    }
-
-    .shop-button::before {
-      content: "";
-      width: 0%;
-      height: 100%;
-      /* border-radius: 30px; */
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #A9B75A;
-      transition: .3s;
-      transform: scaleX(0);
-      transform-origin: left;
-      /* z-index: -1; */
-    }
-
-    .shop-button:hover::before {
-      width: 100%;
-      height: 100%;
-      transform: scaleX(1);
-      /* z-index: -1; */
-    }
-
-    .new-box:hover span {
-      transition: .8s;
-      color: #fff;
-      text-align: center;
-      position: relative;
-    }
-
-    .product-new {
-      width: 100%;
-      height: 350px;
-      background: #fff;
-      color: #000;
-      text-align: center;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-      line-height: 1.5;
-      margin-bottom: 2rem;
-    }
-
-    .product-new-icon {
-      width: 35%;
-      height: 40%;
-      background: #A9B75A;
-      margin-top: 2rem;
-      margin-bottom: .5rem;
-    }
-
-    .product-new p {
-      margin-bottom: 1rem;
-    }
-
-    .product-new-circle {
-      width: 13%;
-      height: 15%;
-      background: #A9B75A;
-      border-radius: 50%;
-    }
-
-    .price {
-      width: 100%;
-      height: 500px;
-      background: #fff;
-      color: #000;
-      text-align: center;
-      line-height: 1.5;
-    }
-
-    .price-pic {
-      width: 80%;
-      height: 40%;
-      background: #A9B75A;
-      margin-top: 2rem;
-      transition: .3s;
-    }
-
-    .price-pic:hover {
-      transform: scale(1.1);
-    }
-
-    .price-pic2 {
-      width: 80%;
-      height: 20%;
-      background: #FEE0A1;
-    }
-
-    .read-button {
-      width: 30%;
-      margin: auto;
-      margin-top: 10px;
-      padding: 10px;
-      border-radius: 30px;
-      background: #5F4D34;
-      overflow: hidden;
-      position: relative;
-      color: #000;
-    }
-
-    .read-button::before {
-      content: "";
-      width: 0%;
-      height: 100%;
-      /* border-radius: 30px; */
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #A9B75A;
-      transition: .3s;
-      transform: scaleX(0);
-      transform-origin: left;
-      /* z-index: -1; */
-    }
-
-    .read-button:hover::before {
-      width: 100%;
-      height: 100%;
-      transform: scaleX(1);
-      /* z-index: -1; */
-    }
-
-    .read-button span {
-      color: #fff;
-      position: relative;
-    }
-
-    .price-nav {
-      width: 100%;
-      height: 500px;
-      /* background: #5F4D34; */
-    }
-
-    .price-nav-logo {
-      width: 100px;
-      height: 100px;
-      background: #A9B75A;
-      border-radius: 60%;
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .nav-button {
-      text-align: center;
-      border: none;
-      width: 300px;
-      height: 35px;
-      margin-bottom: 10px;
-      background: none;
-    }
-
-    .nav-button:hover {
-      background: #A9B75A;
-    }
-
-    .price-nav-content input {
-      display: none;
-    }
-
-    .price-nav-content-class-1,
-    .price-nav-content-class-2,
-    .price-nav-content-class-3 {
-      display: none;
-      padding: .5rem;
-      width: 100%;
-      height: 100px;
-    }
-
-    #nav-btn1:checked~.price-nav-content-class-1 {
-      display: block;
-    }
-
-    #nav-btn2:checked~.price-nav-content-class-2 {
-      display: block;
-    }
-
-    #nav-btn3:checked~.price-nav-content-class-3 {
-      display: block;
-    }
-
-    .person{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      height: 300px;
-      line-height: 1.5;
-    }
-
-    .person-pic{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: #000;
-      margin-bottom: .5rem;
-    }
-
-    .person-pic h1{
-      margin-bottom: .5rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -306,14 +27,16 @@
       </div>
     </div>
 
-    <div class="product-new flex-column-center">
+    <!-- 產品圖片放大 -->
+
+    <div class="product-new d-flex flex-direction-column align-items-center">
       <div class="product-new-icon"></div>
       <h5>Lorem, ipsum.</h5>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, omnis.</p>
       <div class="product-new-circle"></div>
     </div>
 
-    <div class="price flex-column-center">
+    <div class="price d-flex flex-direction-column align-items-center">
       <div class="price-pic">
         我是會放大的圖片喔
       </div>
@@ -328,10 +51,10 @@
       </div>
     </div>
     <!-- 產品選單 -->
-    <div class="price-nav flex-column-center">
+    <div class="price-nav d-flex flex-direction-column align-items-center">
       <div class="price-nav-logo"></div>
       <h2>Lorem, ipsum.</h2>
-      <div class="price-nav-button flex-column-center">
+      <div class="price-nav-button d-flex flex-direction-column align-items-center">
         <label for="nav-btn1" class="nav-button">Lorem, ipsum.</label>
         <label for="nav-btn2" class="nav-button">Lorem, ipsum.</label>
         <label for="nav-btn3" class="nav-button">Lorem, ipsum.</label>
@@ -363,22 +86,49 @@
       <div class="person-name">
         <h1>Lorem, ipsum.</h1>
         <!-- 介紹假文 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit sed optio molestiae nihil reiciendis enim placeat deleniti eius amet rem, quisquam impedit doloremque recusandae numquam iste illo nostrum totam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit sed optio molestiae nihil reiciendis
+          enim placeat deleniti eius amet rem, quisquam impedit doloremque recusandae numquam iste illo nostrum totam?
+        </p>
       </div>
     </div>
-      <!-- 產品圖 -->
-      <div class="price-row">
-        <div class="price-col">
-        <p>Lorem, ipsum.</p>
-        <p>Lorem, ipsum.</p>
-        <div class="shop-button">Shop Now</div>
+    <!-- 產品圖 -->
+    <div class="price-row d-flex flex-wrap-wrap align-items-center justify-content-space-evenly">
+      <div class="price-col  bg-black text-black col">
+        <p class="text-white">Lorem, ipsum.</p>
+        <p class="text-white">Lorem, ipsum.</p>
+        <div class="shop-button text-black text-center">
+          <span> Shop Now </span>
         </div>
-        <div class="price-col">
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <div class="shop-button">Shop Now</div>
-          </div>
       </div>
+      <div class="price-col bg-black text-black col ">
+        <p class="text-white">Lorem, ipsum.</p>
+        <p class="text-white">Lorem, ipsum.</p>
+        <div class="shop-button  text-center ">
+          <span> Shop Now </span>
+        </div>
+      </div>
+    </div>
+    <!-- 會滑動的LOGO -->
+    <div class="logo-active d-flex flex-direction-column flex-wrap-wrap align-items-center">
+      <div class="logo-active-pic"></div>
+      <h1>Lorem, ipsum.</h1>
+      <p>Lorem, ipsum.</p>
+    </div>
+
+    <!-- Special Products 抹茶周邊 -->
+    <div class="special-product">
+      <div class="special-product-logo text-center d-flex flex-direction-column flex-wrap-wrap align-items-center">
+        <div class="special-product-logo-pic "></div>
+        <h1>Special Products</h1>
+      </div>
+      <div class="special-product-content col">
+        <p class="text-white">New Product</p>
+        <img src="./pic/special-product-01.jpg">
+      </div>
+      <div class="shop-button text-center">
+        <span> Shop Now </span>
+      </div>
+    </div>
   </div>
 </body>
 

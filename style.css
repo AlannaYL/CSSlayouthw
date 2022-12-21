@@ -1,0 +1,375 @@
+
+/*  https://demo.templatemonster.com/demo/218547.html  */
+/* color #4D631E  #A9B75A  #5F4D34  #FEE0A1  #F5EAD9  #F4F3F0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5EAD9;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.d-flex{
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-evenly{
+  justify-content: space-evenly
+}
+
+
+.col{
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.bg-black{
+  background: #000;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 230px;
+  height: 65px;
+  background: url(./pic/Logo.jpg);
+}
+
+.navbox {
+  width: 90%;
+  height: 60px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #A9B75A;
+}
+
+.container {
+  width: 90%;
+  /* height: 30px; */
+  /* margin: auto; */
+  padding: 25px 10px 10px 10px;
+  background: #fff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.new-box {
+  width: 100%;
+  height: 200px;
+  background: #5F4D34;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.mini-new-box {
+  width: 90%;
+  height: 30px;
+  background: #A9B75A;
+  margin: auto;
+}
+/* 按鈕特效 */
+.shop-button {
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  color: #000;
+}
+
+.shop-button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  /* border-radius: 30px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #A9B75A;
+  transition: .3s;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* z-index: -1; */
+}
+
+.shop-button:hover::before {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1);
+  /* z-index: -1; */
+}
+
+.new-box:hover span {
+  transition: .8s;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.product-new {
+  width: 100%;
+  height: 350px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.product-new-icon {
+  width: 35%;
+  height: 40%;
+  background: #A9B75A;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+.product-new p {
+  margin-bottom: 1rem;
+}
+
+.product-new-circle {
+  width: 13%;
+  height: 15%;
+  background: #A9B75A;
+  border-radius: 50%;
+}
+
+.price {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.price-pic {
+  width: 80%;
+  height: 40%;
+  background: #A9B75A;
+  margin-top: 2rem;
+  transition: .3s;
+}
+
+.price-pic:hover {
+  transform: scale(1.1);
+}
+
+.price-pic2 {
+  width: 80%;
+  height: 20%;
+  background: #FEE0A1;
+}
+
+.read-button {
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  background: #5F4D34;
+  overflow: hidden;
+  position: relative;
+  color: #000;
+}
+
+.read-button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  /* border-radius: 30px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #A9B75A;
+  transition: .3s;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* z-index: -1; */
+}
+
+.read-button:hover::before {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1);
+  /* z-index: -1; */
+}
+
+.read-button span {
+  color: #fff;
+  position: relative;
+}
+/* 產品選單 */
+
+.price-nav {
+  width: 100%;
+  height: 500px;
+  /* background: #5F4D34; */
+}
+
+.price-nav-logo {
+  width: 100px;
+  height: 100px;
+  background: #A9B75A;
+  border-radius: 60%;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  text-align: center;
+  border: none;
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+  background: none;
+}
+
+.nav-button:hover {
+  background: #A9B75A;
+}
+
+.price-nav-content input {
+  display: none;
+}
+
+.price-nav-content-class-1,
+.price-nav-content-class-2,
+.price-nav-content-class-3 {
+  display: none;
+  padding: .5rem;
+  width: 100%;
+  height: 100px;
+}
+
+#nav-btn1:checked~.price-nav-content-class-1 {
+  display: block;
+}
+
+#nav-btn2:checked~.price-nav-content-class-2 {
+  display: block;
+}
+
+#nav-btn3:checked~.price-nav-content-class-3 {
+  display: block;
+}
+/* 人物介紹 */
+.person{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  line-height: 1.5;
+}
+
+.person-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(./pic/tea.jpg);
+  margin-bottom: .5rem;
+}
+
+.person-pic h1{
+  margin-bottom: .5rem;
+}
+/* 產品圖 */
+.price-col{
+  margin-bottom: 1rem;
+  background: url(./pic/tea.jpg) no-repeat 50% /cover;
+  line-height: 1.5rem;
+  color: #000;
+  text-align: left;
+}
+
+.price-col:hover span {
+  transition: .8s;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+/* 會滑動的LOGO */
+
+.logo-active{
+  margin-top: 1.5rem;
+}
+
+.logo-active-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #A9B75A;
+  margin-bottom: .5rem;
+}
+
+/* Special Products 抹茶周邊 */
+.special-product{
+  margin-top: 1.5rem;
+}
+
+.special-product-logo-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(./pic/special-product-logo.jpg) no-repeat center/50%;
+}
+
+.special-product-content{
+  margin-top: 1.5rem;
+  padding: 10px;
+}
+
+.special-product-content p{
+  display: inline-block;
+  padding: 5px;
+  background: #A9B75A;
+  border-radius: 5px;
+}
+
+.special-product-content img{
+  width: 100%;
+}
+
+.shop-button:hover span {
+  transition: .3s;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
