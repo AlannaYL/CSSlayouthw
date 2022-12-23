@@ -6,34 +6,125 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' />
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./media.css">
 </head>
 
 <body>
+  <!-- 選單 -->
   <div id="header">
     <div class="container row">
-      <span class="col">
+      <span class="col p-left">
         <i class="fa-solid fa-bars icon_menu"></i>
         <img class="logo" src="./pic/Logo.jpg">
       </span>
       <div id="icon_right" class="col">
-        <span class="search_button icon_menu">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </span>
-        <span class="user-info icon_menu">
-          <i class="fa-solid fa-user"></i>
-        </span>
-        <span class="cart-shoop icon_menu">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </span>
+        <i class="fa-solid fa-magnifying-glass icon_menu"></i>
+        <i class="fa-solid fa-user icon_menu"></i>
+        <i class="fa-solid fa-cart-shopping icon_menu"></i>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="top"></div>
+  <!-- 首頁輪播圖 -->
+  <div id="slidecontent">
+    <div class="container">
+      <div class="row">
+        <div class="col">Up to 40% Discount</div>
+        <div class="col">
+          <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+        </div>
+        <div class="col">
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' />
+  <!-- 官網介紹 -->
+  <div id="czaboutcmsblock">
+    <div class="container">
+      <div class="row">
+        <h1 class="col">Welcome To Shop</h1>
+        <p class="col">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+          standard
+          dummy ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make va type
+          specimen book
+          It has not only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged.Lorem
+          Ipsum.
+        </p>
+        <button class="col text-gray">Read More</button>
+      </div>
+    </div>
+  </div>
+  <!-- 商品 banner介紹 -->
+  <div id="cmsbanners">
+    <div class="container">
+      <div class="row">
+        <div class="col cmsbanners_01">
+          <div>Up to 30% Discount</div>
+          <div>
+            <h1 class="banners-h1">Sweet Chocolate Collection</h1>
+          </div>
+          <div>
+            <button>View Collection</button>
+          </div>
+        </div>
+        <div class="col cmsbanners_02">
+          <div>Up to 20% Discount</div>
+          <div>
+            <h1 class="banners-h1">Fresh Chocolate Cupcake</h1>
+          </div>
+          <div>
+            <button>View Collection</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 精選商品 -->
+  <div id="LatestProducts">
+    <div class="container">
+      <div class="row">
+        <h1>Latest Products</h1>
+        <ul class="LatestProducts-menu">
+          <li><a href="">Featured</a></li>
+          <li><a href="">New Arrivals</a></li>
+          <li><a href="">Best Sellers</a></li>
+        </ul>
+      </div>
+      <div class="row flex-row ">
+        <div class="col">
+          <img src="" alt="">
+          <div class="icon_star"></div>
+          <h3>Baker’s Unsweet Choco</h3>
+          <p>€54.28</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <div class="icon_star"></div>
+          <h3>Milk Chocolate Cookies</h3>
+          <p>€54.28</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <div class="icon_star"></div>
+          <h3>Chocolate Milk Assorted</h3>
+          <p>€30.28</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <div class="icon_star"></div>
+          <h3>Milk Chocolate Pretzel Ba</h3>
+          <p>€22.2</p>
+        </div>
+      </div>
+      <div class="col">
+        <button>All Products</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
