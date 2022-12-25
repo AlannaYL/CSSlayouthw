@@ -27,6 +27,10 @@ body {
   flex: 1 0 0%;
 }
 
+.m-1 {
+  margin: 1.5rem 0;
+}
+
 /* 選單 */
 
 #header {
@@ -122,7 +126,7 @@ body {
   color: #f7f2ec;
 }
 
-#czaboutcmsblock .container .row button {
+.brown-color {
   background: #743e2b;
   color: #ffffff;
   font-size: 18px;
@@ -132,7 +136,7 @@ body {
   transition: .5s;
 }
 
-#czaboutcmsblock .container .row button:hover {
+.brown-color:hover {
   cursor: pointer;
   background: #242424;
 }
@@ -180,6 +184,8 @@ body {
   text-decoration: none;
 }
 
+/* 精選商品 */
+
 #LatestProducts {
   width: 100%;
   text-align: center;
@@ -188,6 +194,11 @@ body {
 
 #LatestProducts .row {
   flex-direction: column;
+}
+
+.section-title {
+  background: url(./pic/section-title.png) no-repeat center bottom;
+  padding-bottom: 1rem;
 }
 
 .LatestProducts-menu {
@@ -216,7 +227,185 @@ body {
   color: #fff;
 }
 
+#LatestProducts .container {
+  margin-bottom: 1rem;
+}
+
 #LatestProducts .container .row .col {
   flex: 0 0 auto;
   width: 50%;
+}
+
+.products-pic {
+  width: 100%;
+}
+
+#LatestProducts .container hr {
+  width: 95%;
+}
+
+/* 服務 */
+
+#service_container {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#service_container .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+#service_container .row .col i {
+  font-size: 55px;
+  color: #743e2b;
+}
+
+/*  */
+#czvideocmsblock {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background: url(./pic/slidecontent_01.jpg) repeat-x center/cover;
+  line-height: 2rem;
+  padding: 3rem 0;
+}
+
+#czvideocmsblock .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+#czvideocmsblock .row .col i {
+  font-size: 52px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+/* CEO介紹 */
+#testimonial .row {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#testimonial .products-pic {
+  width: 20%;
+}
+
+#testimonial hr {
+  width: 95%;
+}
+
+.wrapper {
+  padding: 30px 0;
+  display: flex;
+}
+
+.wrapper img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+#Latest-Blog {
+  text-align: center;
+}
+
+#Latest-Blog .row {
+  flex-direction: column;
+}
+
+.blog-logo img {
+  padding: 20px;
+}
+
+#footer {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  background: url(./pic/10019.jpg) repeat-x scroll center top #f7f2ec;
+}
+
+#footer .row {
+  flex-direction: column;
+}
+
+#footer h4 {
+  background: url(./pic/newsletter-title-pattern.png) no-repeat center bottom;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+  line-height: 46px;
+}
+
+
+.newsletter-form {
+  position: relative;
+}
+
+.newsletter-form .newsletter-text {
+  width: 70%;
+  padding-right: 90px;
+  margin-top: 2rem;
+  height: 45px;
+}
+
+.newsletter-form .newsletter-submit {
+  position: absolute;
+  width: 10%;
+  right: 6%;
+  top: 24%;
+  bottom: 0;
+  height: 44px;
+  border: none;
+  color: #fff;
+  background: #743e2b;
+}
+
+.newsletter-checkbox {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0);
+}
+
+.block-social {
+  margin-top: 34px;
+  list-style: none;
+}
+
+.block-social li {
+  text-align: center;
+  font-size: 27px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-inline-end: 20px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+#footer-logo {
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#footer-logo img {
+  width: 50%;
+}
+
+#footer-logo .col {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+#footer-logo a {
+  text-decoration: none;
+  color: #743e2b;
+}
+
+#footer-text {
+  color: #743e2b;
+  text-align: center;
 }
