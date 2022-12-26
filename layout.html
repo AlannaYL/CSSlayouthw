@@ -9,6 +9,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' />
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -28,16 +29,32 @@
   </div>
   <!-- 首頁輪播圖 -->
   <div id="slidecontent">
-    <div class="container">
-      <div class="row">
-        <div class="col">Up to 40% Discount</div>
-        <div class="col">
-          <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+    <div class="container swiper">
+      <div class="swiper-wrapper">
+        <div class="row bg-01 swiper-slide">
+          <div class="col">
+            Up to 40% Discount
+          </div>
+          <div class="col">
+            <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+          </div>
+          <div class="col">
+            <button>Shop Now</button>
+          </div>
         </div>
-        <div class="col">
-          <button>Shop Now</button>
+        <div class="row bg-02 swiper-slide">
+          <div class="col">Up to 30% Discount</div>
+          <div class="col">
+            <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+          </div>
+          <div class="col">
+            <button>Shop Now</button>
+          </div>
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
     </div>
   </div>
   <!-- 官網介紹 -->
@@ -46,7 +63,8 @@
       <div class="row">
         <h1 class="col">Welcome To Shop</h1>
         <p class="col">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industrys
           standard
           dummy ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make va type
           specimen book
@@ -118,6 +136,18 @@
           <div class="icon_star"></div>
           <h3>Milk Chocolate Pretzel Ba</h3>
           <p>€22.21</p>
+        </div>
+        <div class="col">
+          <img class="products-pic" src="./pic/Bakewareind Chocolate.jpg">
+          <div class="icon_star"></div>
+          <h3>Bakewareind Chocolate</h3>
+          <p>€25.31</p>
+        </div>
+        <div class="col">
+          <img class="products-pic" src="./pic/Cadbury Mix Buttons.jpg">
+          <div class="icon_star"></div>
+          <h3>Cadbury Mix Buttons</h3>
+          <p>€40.2</p>
         </div>
       </div>
       <div class="col">
@@ -206,7 +236,7 @@
   <!-- footer 訂閱 -->
   <div id="footer">
     <div class="row">
-      <h4>Subscribe To Newsletter</h4>
+      <h4 class="footer-title">Subscribe To Newsletter</h4>
       <div class="col">
         It is a long established fact that a reader will be distracted by the readable content when looking at its
         layout. The
@@ -246,6 +276,8 @@
   </div>
   <hr>
   <p id="footer-text">© 2022 - Ecommerce software by PrestaShop™</p>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./swiper.js"></script>
 </body>
 
 </html>

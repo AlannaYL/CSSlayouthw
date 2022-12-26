@@ -82,15 +82,35 @@ body {
   width: 100%;
   text-align: center;
   color: #ffffff;
-  background: url(./pic/slidecontent_01.jpg) repeat-x center/cover;
   line-height: 2rem;
-  padding: 3rem 0;
+
 }
 
 #slidecontent .row {
   flex-direction: column;
   align-items: center;
+  padding: 3rem 0;
 }
+
+.bg-01{
+  background: url(./pic/slidecontent_01.jpg) repeat-x center/cover;
+}
+
+.bg-02{
+  background: url(./pic/slidecontent_02.jpg) repeat-x center/cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  color: #f7f2ec !important;
+}
+
+.swiper-button-prev:hover{
+  color: #743e2b !important;
+
+}
+
+
 
 .banners-h1 {
   font-size: 22px;
@@ -257,7 +277,7 @@ body {
 }
 
 #service_container .row .col i {
-  font-size: 55px;
+  font-size: 280%;
   color: #743e2b;
 }
 
@@ -408,4 +428,8 @@ body {
 #footer-text {
   color: #743e2b;
   text-align: center;
+}
+
+.footer-title{
+  font-size: 34px;
 }
