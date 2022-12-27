@@ -20,6 +20,14 @@
         <i class="fa-solid fa-bars icon_menu"></i>
         <img class="logo" src="./pic/Logo.jpg">
       </span>
+      <ul class="header-nav">
+        <li><a href="">Chocolate</a></li>
+        <li><a href="">Aigner</a></li>
+        <li><a href="">Strawberry</a></li>
+        <li><a href="">All Brands</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
       <div id="icon_right" class="col">
         <i class="fa-solid fa-magnifying-glass icon_menu"></i>
         <i class="fa-solid fa-user icon_menu"></i>
@@ -28,32 +36,30 @@
     </div>
   </div>
   <!-- 首頁輪播圖 -->
-  <div id="slidecontent">
-    <div class="container swiper">
-      <div class="swiper-wrapper">
-        <div class="row bg-01 swiper-slide">
-          <div class="col">
-            Up to 40% Discount
-          </div>
-          <div class="col">
-            <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
-          </div>
-          <div class="col">
-            <button>Shop Now</button>
-          </div>
+  <div id="swiper1" class="container swiper">
+    <div class="swiper-wrapper">
+      <div class="row bg-01 swiper-slide">
+        <div class="col">
+          Up to 40% Discount
         </div>
-        <div class="row bg-02 swiper-slide">
-          <div class="col">Up to 30% Discount</div>
-          <div class="col">
-            <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
-          </div>
-          <div class="col">
-            <button>Shop Now</button>
-          </div>
+        <div class="col">
+          <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+        </div>
+        <div class="col">
+          <button>Shop Now</button>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="row bg-02 swiper-slide">
+        <div class="col">Up to 30% Discount</div>
+        <div class="col">
+          <h1 class="banners-h1">Assorment Of Mixed Chocolate</h1>
+        </div>
+        <div class="col">
+          <button>Shop Now</button>
+        </div>
+      </div>
     </div>
+    <div class="swiper-pagination"></div>
   </div>
   <!-- 官網介紹 -->
   <div id="czaboutcmsblock">
@@ -178,7 +184,7 @@
   <div id="czvideocmsblock">
     <div class="container">
       <div class="row">
-        <div class="col">Up to 30% Discount</div>
+        <div class="col ">Up to 30% Discount</div>
         <div class="col">
           <h1 class="banners-h1">Sweet Cream Chocolate</h1>
         </div>
@@ -215,29 +221,37 @@
   </div>
 
   <!-- 輪播 -->
-  <div id="Latest-Blog" class="container">
+  <div id="Latest-Blog" class="container swiper">
     <h1 class="section-title">Latest Products</h1>
-    <div class="row">
-      <div class="blog-wrapper">
+    <div class="swiper-wrapper">
+      <div class="blog-wrapper  swiper-slide">
         <img class="products-pic" src="./pic/Click to view Full Image .jpg" alt="">
         <h4>Nullam ullamcorper ornare molestie</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatum?
         </p>
       </div>
-      <div class="blog-wrapper">
-        <img class="products-pic" src="./pic/Click to view Full Image .jpg" alt="">
+      <div class="blog-wrapper swiper-slide">
+        <img class="products-pic" src="./pic/Click to view Full Image02.jpg" alt="">
+        <h4>Nullam ullamcorper ornare molestie</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatum?
+        </p>
+      </div>
+      <div class="blog-wrapper swiper-slide">
+        <img class="products-pic" src="./pic/Click to view Full Image03.jpg" alt="">
         <h4>Nullam ullamcorper ornare molestie</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatum?
         </p>
       </div>
     </div>
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div class="container swiper">
-    <div class="blog-logo row swiper-wrapper">
-      <img class="col swiper-slide" src="./pic/blog-logo01.jpg">
-      <img class="col swiper-slide" src="./pic/blog-logo02.jpg">
+  <div id="swiper3" class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./pic/blog-logo01.jpg"></div>
+      <div class="swiper-slide"><img src="./pic/blog-logo02.jpg"></div>
+      <div class="swiper-slide"><img src="./pic/blog-logo01.jpg"></div>
+      <div class="swiper-slide"><img src="./pic/blog-logo01.jpg"></div>
     </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>

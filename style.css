@@ -76,17 +76,19 @@ body {
   padding-right: 10px;
 }
 
+.header-nav{
+  display: none;
+}
 /* 首頁輪播圖 */
 
-#slidecontent {
+#swiper1 {
   width: 100%;
   text-align: center;
   color: #ffffff;
   line-height: 2rem;
-
 }
 
-#slidecontent .row {
+#swiper1 .row {
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
@@ -132,7 +134,7 @@ body {
   margin-top: 20px;
 }
 
-#slidecontent .row .col button {
+#swiper1 .row .col button {
   padding: 10px 1rem;
   font-size: 13px;
   margin-top: 20px;
@@ -142,7 +144,7 @@ body {
   color: #743e2b;
 }
 
-#slidecontent .row .col button:hover {
+#swiper1 .row .col button:hover {
   background: #f7f2ec;
   cursor: pointer;
 }
@@ -340,7 +342,10 @@ body {
   width: 50%;
   height: 50%;
   border-radius: 50%;
+  margin-left: 10px;
 }
+
+/* 輪播 */
 
 #Latest-Blog {
   text-align: center;
@@ -360,8 +365,21 @@ body {
   width: 100%;
 }
 
-.blog-logo img {
-  padding: 20px;
+#swiper3 {
+  text-align: center;
+}
+
+#swiper3 img {
+  width: 40%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#swiper3 .swiper-button-prev,
+#swiper3 .swiper-button-next {
+  color: #707070 !important;
 }
 
 #footer {
@@ -398,7 +416,7 @@ body {
 .newsletter-form .newsletter-submit {
   position: absolute;
   width: 10%;
-  right: 6%;
+  right: calc(100% - 95%);
   top: 24%;
   bottom: 0;
   height: 44px;
