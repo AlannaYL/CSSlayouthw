@@ -356,13 +356,23 @@ body {
   justify-content: center;
 }
 
-.blog-wrapper {
-  flex: 0 0 auto;
-  width: 100%;
+.blog-wrapper,
+.swiper-slide,
+.swiper-slide-duplicate,
+.swiper-slide-active {
+  overflow: hidden !important;
+  width: 350px;
+  height: 350px;
 }
 
-.blog-wrappe img {
+/* .swiper-slide .products-pic {
   width: 100%;
+} */
+
+.swiper-slide .products-pic:hover{
+  /* cursor: pointer !important; */
+  transform:scale(1.5) !important;
+  overflow:hidden
 }
 
 #swiper3 {
