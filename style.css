@@ -79,7 +79,28 @@ body {
 .header-nav {
   display: none;
 }
+.top-menu{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  background: #f6f1ed;
+  z-index: 5;
+  line-height: 2;
+  display: none;
+  transition: all 500ms ease 0s;
+}
 
+.top-menu ul{
+  position: relative;
+  padding: 0;
+  width: auto;
+  margin: 0;
+}
+
+.header-nav .header-nav-top:hover .top-menu{
+  display: block;
+}
 /* 首頁輪播圖 */
 
 #swiper1 {
@@ -105,7 +126,7 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #f7f2ec !important;
+  color: #413e3a !important;
 }
 
 .swiper-button-prev:hover {
@@ -359,25 +380,56 @@ body {
 
 .blog-wrapper,
 .swiper-slide {
-  overflow: hidden !important;
   width: 100%;
   height: 100%;
+  justify-content: center;
   text-align: center;
 }
 
 .swiper-slide .products-pic {
-  width: 100%;
-  background-color: #242424;
-  transition: .5s;
+  width: 380px;
+  height: 350px;
+  background: url(./pic/Click\ to\ view\ Full\ Image\ .jpg) no-repeat center/cover;
+  transition: 2s;
+  margin: auto;
+  display: flex;
 }
+
 
 .swiper-slide .products-pic:hover {
   /* cursor: pointer !important; */
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  transform: scale(1.1);
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./pic/Click\ to\ view\ Full\ Image\ .jpg) no-repeat center/150%;  
+}
+
+.products-pic-nav{
+  margin: auto;
+  display: none;
+  transition: 2s;
+}
+
+.products-pic-nav li{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #fff;
+  opacity: 1;
+  list-style: none;
+  color: #fff;
+  transition: .5s;
+}
+
+.products-pic-nav li i{
+  padding-top: 6px;
+}
+
+.products-pic:hover .products-pic-nav {
+  display: block;
+}
+
+.products-pic-nav li:hover{
+  cursor: pointer;
+  border: 5px solid #743e2b;
+  background-color: #743e2b;
 }
 
 #swiper3 {
@@ -394,7 +446,7 @@ body {
 
 #swiper3 .swiper-button-prev,
 #swiper3 .swiper-button-next {
-  color: #707070 !important;
+  color: #828282 !important;
 }
 
 #footer {

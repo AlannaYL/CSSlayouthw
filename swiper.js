@@ -15,13 +15,13 @@ const swiper2 = new Swiper('#Latest-Blog', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 3,
+  spaceBetween: 1,
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     768: {
       slidesPerView: 2,
-      spaceBetween: 3
+      spaceBetween: 4
     },
   },
   // Navigation arrows

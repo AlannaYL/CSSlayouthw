@@ -88,6 +88,10 @@
     padding: 10px;
   }
 
+  .swiper-slide .products-pic {
+    width: 400px;
+  }
+
   .newsletter-form .newsletter-submit {
     right: calc(100% - 87.5%);
   }
@@ -104,7 +108,15 @@
     padding: 10px;
   }
 
+  .swiper-slide .products-pic {
+    width: 580px;
+  }
+
   .newsletter-form .newsletter-submit {
     right: calc(100% - 87.5%);
   }
+
+  .cmsbanners_01, .cmsbanners_02 {
+    padding: 8rem 0;
+}
 }
